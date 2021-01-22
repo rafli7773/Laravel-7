@@ -45,6 +45,7 @@
             </div>
         </div>
         @endforeach
+        {{ $players->appends(Request::all())->links() }}
     </div>
 </div>
 @endsection
